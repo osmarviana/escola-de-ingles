@@ -1,0 +1,101 @@
+.contact {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-form {
+  background-color: #cccccc30;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 50px;
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input,
+.label-float textarea {
+  width: 100%;
+  min-width: 180px;
+  padding: 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid var(--primary-color);
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+  color: var(--primary-color);
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+  resize: none;
+}
+
+.label-float textarea {
+  margin-top: 5px;
+}
+
+.label-float input:focus,
+.label-float textarea:focus {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.label-float label {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 16px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.4s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+.label-float textarea:focus + label,
+.label-float textarea:valid + label {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+#button {
+  width: 100%;
+  padding: 3px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+#button:hover {
+  background-color: var(--secondary-color);
+}
