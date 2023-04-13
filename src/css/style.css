@@ -142,12 +142,29 @@ body {
 }
 
 .button-container {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
   margin-bottom: 15px;
+}
+
+.btn-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #eee;
+  gap: 20px;
+}
+
+.btn-box .info-btn {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .button-container .button-level,
@@ -155,9 +172,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
-  height: 30px;
-  background-color: var(--tertiary-color);
+  padding: 5px 10px;
   color: var(--bg-color);
   border: none;
   gap: 5px;
@@ -165,8 +180,14 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.button-container .button-profile {
+  background-color: var(--tertiary-color);
+  width: 100%;
+}
+
 .button-container .button-level {
   background-color: var(--secondary-color);
+  width: 100%;
 }
 
 .button-container .button-level:hover,
