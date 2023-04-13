@@ -1,0 +1,75 @@
+.join-us-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+
+.button-container .title {
+  text-transform: uppercase;
+  color: var(--font-color);
+  text-align: center;
+}
+
+.btn-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f6eafc;
+  gap: 20px;
+}
+
+.btn-box .info-btn {
+  text-align: justify;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.btn-box a {
+  width: 100%;
+}
+
+.button-container .button-level,
+.button-container .button-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  color: var(--bg-color);
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  gap: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.button-container .button-profile {
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+.button-container .button-level {
+  background-color: var(--secondary-color);
+  width: 100%;
+}
+
+.button-container .button-level:hover,
+.button-container .button-profile:hover {
+  background-color: var(--tertiary-color);
+}

@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.contact .contact-title{
+.contact .contact-title {
   color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -15,17 +15,23 @@
 }
 
 .container-form {
-  background-color: #cccccc30;
   display: flex;
-  flex-wrap: wrap;
+  
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  gap: 50px;
+  gap: 30px;
+}
+
+picture {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
 }
 
 .form {
-  padding: 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,8 +42,7 @@
   width: 100%;
   position: relative;
   padding-top: 13px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% 0;
 }
 
 .label-float input,

@@ -111,14 +111,14 @@ body {
 
 .contact-info {
   width: 100%;
-  background-color: #cccccc30;
+  background-color: var(--primary-color);
   padding: 10px;
   margin-bottom: 15px;
   text-align: center;
 }
 
 .contact-info h3 {
-  color: var(--font-color);
+  color: var(--bg-color);
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -130,67 +130,40 @@ body {
 }
 
 .contact-info .contact-details i {
-  color: var(--font-color);
+  color: var(--bg-color);
 }
 
 .contact-info .contact-details a {
-  color: var(--font-color);
+  color: var(--bg-color);
 }
 
 .contact-info .contact-details a:hover {
-  color: var(--primary-color);
+  color: var(--light-color);
 }
 
-.button-container {
+.btn-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 15px;
 }
 
-.btn-box {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px;
-  background-color: #eee;
-  gap: 20px;
+.btn-container .link-btn {
+  width: 100%;
 }
 
-.btn-box .info-btn {
-  text-align: justify;
-  font-size: 14px;
-  line-height: 22px;
-}
-
-.button-container .button-level,
-.button-container .button-profile {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 10px;
-  color: var(--bg-color);
+.btn-container .btn-join-us {
+  width: 100%;
   border: none;
-  gap: 5px;
+  background-color: var(--secondary-color);
+  padding: 8px;
+  text-transform: uppercase;
+  color: var(--bg-color);
+  font-weight: 700;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
-.button-container .button-profile {
-  background-color: var(--tertiary-color);
-  width: 100%;
-}
-
-.button-container .button-level {
-  background-color: var(--secondary-color);
-  width: 100%;
-}
-
-.button-container .button-level:hover,
-.button-container .button-profile:hover {
-  transform: scale(1.05);
+.btn-container .btn-join-us:hover {
+  background-color: var(--primary-color);
 }

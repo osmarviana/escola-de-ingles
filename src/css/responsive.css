@@ -30,6 +30,8 @@
   }
 
   .button-container {
+    width: 100vw;
+    padding: 10px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -45,6 +47,14 @@
   .button-container .button-level,
   .button-container .button-profile {
     width: 100%;
+  }
+
+  .contact{
+    padding: 0 10px;
+  }
+
+  .container-form{
+    flex-wrap: wrap;
   }
 
   .form {
