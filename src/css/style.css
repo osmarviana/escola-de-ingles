@@ -5,7 +5,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background-image: url(../img/background-page.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .header {
@@ -166,4 +166,69 @@ body {
 
 .btn-container .btn-join-us:hover {
   background-color: var(--primary-color);
+}
+
+
+
+.faq-box {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  margin-bottom: 25px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.list-item {
+  background-image: url(../img/plus.png);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: top right 10px;
+  cursor: pointer;
+}
+
+.list-item.active {
+  background-image: url(../img/minus.png);
+  background-size: 16px;
+  background-position: top 5px right 10px;
+}
+
+.list-item.active .answers {
+  display: block;
+}
+
+.list-item.active .question {
+  color: var(--light-color);
+}
+
+.list-item:nth-last-child(n + 2) {
+  border-bottom: 2px solid #fff;
+  margin-bottom: 15px;
+}
+
+.question {
+  width: 95%;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.answers {
+  width: 95%;
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+.answers.active {
+  display: block;
 }

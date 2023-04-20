@@ -42,6 +42,7 @@
 
 - HTML
 - CSS
+- JS
   </br>
 
 ## <b>Links 🔗</b>

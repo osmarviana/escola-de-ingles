@@ -41,6 +41,14 @@
   .btn-box {
     width: 100%;
   }
+
+  .faq-box {
+    width: 90vw;
+  }
+
+  .container-form {
+    width: 90vw;
+  }
 }
 
 @media (max-width: 425px) {
@@ -49,16 +57,12 @@
     width: 100%;
   }
 
-  .contact{
+  .contact {
     padding: 0 10px;
   }
 
-  .container-form{
+  .container-form {
     flex-wrap: wrap;
-  }
-
-  .form {
-    width: 100%;
   }
 }
 
@@ -66,6 +70,15 @@
   .button-container .button-level,
   .button-container .button-profile {
     width: 320px;
+  }
+
+  .question{
+    width: 90%;
+    font-size: 14px;
+  }
+  .answers {
+    width: 90%;
+    font-size: 12px;
   }
 }
 
